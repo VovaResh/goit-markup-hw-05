@@ -367,6 +367,11 @@
   
  </footer>
 
+
+ 
+<script src="./js/modal.js"></script>
+
+
 <!-- Modal window -->
 <!-- <div class="backdrop" data-modal>
   <div class="model">
@@ -377,8 +382,23 @@
     </button>
   </div>
 </div> -->
- 
-<script src="./js/modal.js"></script>
+<div class="backdrop">
+  <div class="modal">
+    <button type="button" class="modal-btn">
+      <svg class="traling-icon" width="8" height="8">
+        <use href="./images/icons.svg#x_close"></use>
+      </svg>
+    </button>
+    <p class="modal-title main-team-name">Leave your contacts and we will call you back</p>
+    <form class="modal-form">
+      <label for="user-name" class="modal-label">Name</label>
+      <input type="text" name="user-name" class="model-input" placeholder="User name" id="user-name">
+      <input type="email" name="user-email" class="model-input" placeholder="User name">
+      <input type="tel" name="user-phone" class="model-input" placeholder="User name" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
 </body>
 
 </html>
