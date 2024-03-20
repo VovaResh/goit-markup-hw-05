@@ -1,4 +1,4 @@
-:root {
+:root{
   /* font */
   --primary-font: Roboto, sans-serif;
   --seconary-font: Raleway, sans-serif;
@@ -779,12 +779,13 @@ ol {
   color:var(--color-logo)
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .check-text a {
 }
 
 .check-text span {
-  width: 20px;
+  /* width: 20px;
   height: 20px;
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
@@ -792,7 +793,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
+  fill: transparent; */
 }
 .form-check:checked + .check-text span {
   background-color: var(--accent-txt-cl);
@@ -809,6 +810,7 @@ ol {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 .policy{
   color:var(--normal-txt-cl)
@@ -825,6 +827,8 @@ ol {
   background-color:var(--normal-txt-cl);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
+  
   
   /* background-color: transparent;
   border: 1px solid #4c4c4c;
