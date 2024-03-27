@@ -681,6 +681,9 @@ ol {
   margin-bottom: 8px;
 }
 .modal-field-comment {
+  margin-bottom: 16px;
+}
+.modal-field-check {
   margin-bottom: 24px;
 }
 .modal-label {
@@ -753,7 +756,7 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-logo);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
