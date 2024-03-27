@@ -647,8 +647,11 @@ ol {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-focus {
+.modal-btn:hover {
+  border: none;
+  background-color: var(--accent-txt-cl);
+}
+.modal-btn:focus {
   border: none;
   background-color: var(--accent-txt-cl);
 }
@@ -675,10 +678,10 @@ focus {
 .modal-form {
 }
 .modal-field {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 .modal-field-comment {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .modal-label {
   display: block;
@@ -708,7 +711,7 @@ focus {
   border-color: #4d5ae5;
 }
 .modal-input:focus + .modal-icon {
-  stroke: #404bbf;
+  fill: #4d5ae5;
 }
 .modal-input::placeholder {
   color: #404bbf;
@@ -750,7 +753,7 @@ focus {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-logo);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
