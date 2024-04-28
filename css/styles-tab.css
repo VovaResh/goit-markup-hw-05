@@ -1,0 +1,62 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .open-menu-btn {
+    display: none;
+  }
+  .header-logo {
+    margin-right: 120px;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(#2e2f42);
+    display: block;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .active {
+    position: relative;
+    color: var(#404bbf);
+  }
+  .header-item.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    background-color: var(#404bbf);
+  }
+  .header-contakt {
+    display: block;
+  }
+  .header-contakt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .header-contakt-l {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+    transition: var(--animation);
+  }
+}
