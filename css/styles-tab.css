@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -58,5 +58,103 @@
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
     transition: var(--animation);
+  }
+  /* main */
+
+  .background {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(var(--grey), var(--grey)),
+      url(../images/people_office.jpg);
+    max-width: 768px;
+  }
+  @media screen and (wedkit-min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background {
+      background-image: linear-gradient(var(--grey), var(--grey)),
+        url(../images/people_office.jpg);
+    }
+    .main-title {
+      font-size: 56px;
+      line-height: 1.07;
+      letter-spacing: 0.02em;
+      max-width: 496px;
+    }
+  }
+  .main-list {
+    flex-direction: row;
+    row-gap: 72px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+  .main-item {
+    width: calc((100%-24px) / 2);
+  }
+  .main-item-title {
+    text-align: left;
+  }
+  .main-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+  }
+
+  /* Team */
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  /* portfolio */
+
+  .portfolio-list {
+    row-gap: 72px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    column-gap: 24px;
+  }
+  .overlay {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* footer */
+
+  .footer-bloc {
+    display: flex;
+    align-items: flex-start;
+    width: 584px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer-bloc-logo {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-soc {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-form {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-traling-title {
+    text-align: start;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
